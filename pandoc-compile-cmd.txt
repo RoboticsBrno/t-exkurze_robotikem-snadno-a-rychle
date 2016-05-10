@@ -1,0 +1,1 @@
+pandoc .\exkurze.md -s --highlight-style tango --number-section -V lang=cs --toc -o t-exkurze_robotikem-snadno-a-rychle.pdf
