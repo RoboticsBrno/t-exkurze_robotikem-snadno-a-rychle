@@ -9,13 +9,13 @@ geometry: margin=3cm
 
 Ahoj, rádi bychom vás přivítali na naší T-exkurzi a jsme velmi rádi, že jste si vybrali zrovna tu naši :-).
 
-Ale dost povídání. Pojďme rovnou na to. V teoretické části si probereme, z čeho se takový robot skládá a jaké všechny komponenty potřebuje. Následně se vrhneme do základu programovacího jazyka C/C++.
+Ale dost povídání. Pojďme rovnou na to. V teoretické části si probereme, z čeho se takový robot skládá a jaké všechny komponenty potřebuje. Následně se vrhneme do základů programovacího jazyka C/C++.
 
 V praktické části si vyzkoušíte ovládat virtuálního robota, který je věrnou kopií našich robotů, které máme k dispozici a s kterými si budeme také hrát v rámci T-exkurze.
 
 Na závěr vás bude čekat menší programátorský testík, tak abyste nám ukázali, že jste se do materiálů podívali a zkusili si zprovoznit virtuálního robota.
 
-Nyní je k Vám k dispozici teoretická část materiálů. Praktická část a testík by měla být dostupná od 8.5.2016. Pokud budete mít dotaz, nebojte se s ním na nás obrátit. Rádi bychom během května vypsali i konzultační hodiny. kdy vám budeme k dispozici na Skypu.
+Nyní je Vám k dispozici teoretická část materiálů. Praktická část a testík by měla být dostupná od 8.5.2016. Pokud budete mít dotaz, nebojte se s ním na nás obrátit. Rádi bychom během května vypsali i konzultační hodiny, kdy vám budeme k dispozici na Skypu.
 
 # Co to ten robot vlastně je? 
 
@@ -33,11 +33,11 @@ Roboti ze soutěže Ketchup House, která se koná každoročně v rámci
 Robotického dne v Praze
 --->
 
-Vidíte tedy, že představa o tom, co je to tedy robot může být různá. My se budeme bavit o jednodušších autonomních robotech, zaměřených na plnění soutěžních úloh, jak můžete například vidět na obrázku výše.
+Vidíte tedy, že představa o tom, co je to tedy robot, může být různá. My se budeme bavit o jednodušších autonomních robotech, zaměřených na plnění soutěžních úloh, jak můžete například vidět na obrázku výše.
 
 # Z čeho se robot skládá
 
-V této kapitole probereme jednotlivé části robota: pohony, senzory, řídící elektronika, napájení
+V této kapitole probereme jednotlivé části robota: pohony, senzory, řídicí elektronika, napájení.
 
 ##Pohony 
 
@@ -45,37 +45,37 @@ Pohon je zařízení, které uvádí celého robota do pohybu. Pohony se větši
 
 ## Senzory
 
-### Ultrazvuk
+### Ultrazvukový dálkoměr
 
-Ultrazvukový senzor je zařízení, které za pomocí ultrazvukových vln, době jejich letu a schopnosti odrazu, dokáže určit vzdálenost od překážky. Jeho konstrukce obsahuje piezo měnič, který generuje ultrazvukové vlny. Tyto vlny se při nárazu na překážku vrací zpět.
+Ultrazvukový dálkoměr je zařízení, které za pomoci ultrazvukových vln dokáže určit vzdálenost od překážky. Jeho konstrukce obsahuje piezo měnič, který převádí elektrický signál na ultrazvukové vlny a naopak. Tyto vlny se při nárazu na překážku odrazí a vrátí zpět. Senzor měří čas, mezi původní vyslanou vlnou a přijatou odraženou. Tento čas je pomocí známé rychlosti zvuku (cca 340 m/s) převeden na vzdálenost.
 
 ### Infračervený senzor
 
-Infračervený senzor je zařízení, které určuje vzdálenost pomocí světelných paprsků, které jsou na bázi neviditelného světelného spektra. Vyslaný paprsek se odrazí, vrátí zpět a dopadá na fotodiodu. Zpětná intenzita paprsku závisí na vzdálenosti, kterou musel paprsek urazit.
+Infračervený senzor je zařízení, které určuje vzdálenost pomocí světelných paprsků v infračerveném spektru (nad viditelnou oblastí). Vyslaný paprsek se odrazí, vrátí zpět a dopadá na fotodiodu. Intenzita odraženého paprsku závisí na vzdálenosti, kterou musel paprsek urazit.
 
 Infračervený senzor lze také použít pro měření odrazivosti (například při sledování černé čáry na bílem povrchu). Odrazivost povrchu může také velmi ovlivňovat naměřenou vzdálenost.
 
 ### Mechanický senzor
 
-Mezi senzory můžeme zařadit i mechanické prvky jako tlačítko či přepínač. Robot reaguje na sepnutí nebo přepnutí a následně po této změně vykoná danou akci. Jedná se o nejjednodušší variantu senzoru a proto se s ní lze setkat dost často.
+Mezi senzory můžeme zařadit i mechanické prvky jako tlačítko, či přepínač. Robot reaguje na sepnutí nebo přepnutí a následně po této změně vykoná naprogramovanou akci. Jedná se o nejjednodušší variantu senzoru a proto se s ní lze setkat hodně často.
 
 ### Enkodér
 
-Enkodér je zařízení, které umožňuje získat informace o poloze, rychlosti nebo ujeté vzdálenosti (v závislosti na jeho typu a způsobu zpracovávání informací). Lze jej připojit k motoru, ale může být upevněn i u kola robota nebo jakémukoliv pohybujícímu se prvku. 
+Enkodér je zařízení, které umožňuje získat informace o poloze, rychlosti nebo ujeté vzdálenosti (v závislosti na jeho typu a způsobu zpracovávání informací). Lze jej připojit k motoru, ale může být upevněn i u kola robota nebo jakémkoliv pohybujícím se prvku. 
 	
-## Řídící elektronika
+## Řídicí elektronika
 
-Řídící elektronika zajišťuje ovládání všech částí robota a zároveň vykonává předprogramovanou sadu příkazů. V závislosti na datech ze senzorů může upravovat chování robota. Řídící elektronika může být buď jako jedna deska plošných spojů (DPS), nebo se může jednat o více samostatných DPS rozdělených podle zaměření (silová elektronika, senzory, hlavní řídící číp/logika).
+Řídicí elektronika zajišťuje ovládání všech částí robota a zároveň vykonává předprogramovanou sadu příkazů. V závislosti na datech ze senzorů může upravovat chování robota. Řídicí elektronika může být buď jako jedna deska plošných spojů (DPS), nebo se může jednat o více samostatných DPS rozdělených podle zaměření (silová elektronika, senzory, hlavní řídicí číp/logika).
 
-Srdcem každé řídící elektroniky je procesor. Prakticky se jedná o “mozek” elektroniky. Procesor vykonává všechny matematické a logické operace. Vykonává daný program. Může komunikovat s ostatními periferiemi. 
+Srdcem každé řídicí elektroniky je procesor. Prakticky se jedná o “mozek” elektroniky. Procesor vykonává všechny matematické a logické operace - vykonává daný program. Může komunikovat s ostatními periferiemi. 
 
-Pro komunikaci s řídící elektronikou lze využít Bluetooth nebo WiFi nebo sériovou linku (nejjednodušší varianta).. 
+Pro komunikaci s řídicí elektronikou lze využít Bluetooth, WiFi nebo sériovou linku (nejjednodušší varianta). 
 
 ## Napájení
 
 Napájení je jednou z nejdůležitějších částí robota. Napájení musí být vhodně umístěno na robotovi, aby mu neznemožňovalo pohyb a nesmí mu rozhodit těžiště. 
 
-Robota lze napájet přes kabel, pomocí baterií, ale také bezdrátově. Většinou se dnes využívají baterie a to ať už klasické NiMH, Pb nebo z modernější typy jako Li-Pol, Li-Fe, Li-ion. U baterií Li-xxx je problém s jejich větší náchylností na zničení. Nesmíte je pod vybýt, dlouhodobě nechat nabyté na 100 % kapacity nebo například z nich brát moc velké proudy. I tyto problémy komplikují řešení napájení bateriových robotů.
+Robota lze napájet přes kabel, pomocí baterií, ale také bezdrátově. Většinou se dnes využívají baterie a to ať už klasické NiMH, Pb nebo modernější typy jako Li-Pol, Li-Fe, Li-ion. U baterií Li-xxx je problém s jejich větší náchylností na zničení. Nesmíte je pod vybýt, dlouhodobě nechat nabyté na 100 % kapacity nebo například z nich brát moc velké proudy. I tyto problémy komplikují řešení napájení bateriových robotů.
 
 # Základy programování
 
@@ -92,13 +92,13 @@ Občas je dobré připsat si ke kódu poznámky, abychom časem věděli, proč 
  * `//` Tyto dvě lomítka uvozují komentář, trvající do konce řádku. Jakýkoli text od těchto dvou lomítek do konce řádku je komentář a na překlad a běh programu nemá vůbec žádný vliv
  * `/* ... */` Tento styl komentáře je použitelný pro rozsáhlejší poznámky, neboť uvozovací sekvence `/*` může ležet klidně třeba 200 řádků před ukončovacím `*/`
  
-Kromě poznámek mají komentáře ještě jednu důležitou funkci. Při ladění programu se často stává, že potřebujeme, aby se určitý již napsaný kus kódu prostě neprovedl. Jedna možnost, jak toho dosáhnout je tento kus kódu prostě ze zdrojového souboru vyjmout (případně si ho uložit do jiného souboru, abychom o něj nepřišli). To je ale občas nešikovné. Lepší je daný kus kódu takzvaně zakomentovat. Prostě ho označíme jako komentář a kompilátor ho při překladu bude ignorovat.
+Kromě poznámek mají komentáře ještě jednu důležitou funkci. Při ladění programu se často stává, že potřebujeme, aby se určitý již napsaný kus kódu prostě neprovedl. Jedna možnost, jak toho dosáhnout, je tento kus kódu prostě ze zdrojového souboru vyjmout (případně si ho uložit do jiného souboru, abychom o něj nepřišli). To je ale občas nešikovné. Lepší je daný kus kódu takzvaně zakomentovat. Prostě ho označíme jako komentář a kompilátor ho při překladu bude ignorovat.
 
 ## Proměnná
 
-Proměnná je kus paměti počítače, který si můžeme v programu vyhradit pro naše data. Proměnné se dělí podle toho, jaká data v nich chceme ukládat. Podle typu proměnné se při jejím vytvoření zabere správně velký kus paměti. Bohužel v C++ není velikost proměnných daná pouze jejich typem, ale závisí také na překladači. Proto se může stát, že stejná proměnná bude jinak velká na PC a na mikroprocesoru (uP). Velikosti proměnných v následující tabulce jsou vzaté experimentálně pro mikrokontroléry Atmel Mega (AVR Studio 5), které budeme využívat na naší T-exkurzi a PC (Microsoft Visual Studio 2010), které by měli odpovídat hodnotám v nástroji Qt pro práci v Simulátoru.
+Proměnná je kus paměti počítače, který si můžeme v programu vyhradit pro naše data. Proměnné se dělí podle toho, jaká data v nich chceme ukládat. Podle typu proměnné se při jejím vytvoření zabere správně velký kus paměti. Bohužel v C++ není velikost proměnných daná pouze jejich typem, ale závisí také na překladači. Proto se může stát, že stejná proměnná bude jinak velká na PC a na mikroprocesoru (uP). Velikosti proměnných pro mikrokontroléry Atmel ATMega (AVR Studio 5), které budeme využívat na naší T-exkurzi a PC (Microsoft Visual Studio 2010, ale odpovídají i hodnotám v nástroji Qt pro práci v Simulátoru), jsou uvedeny v následující tabulce. Jsou určené experimentálně.
 
-Všechny celočíselné proměnné (včetně typu `char`) se mohou vyskytovat ve dvou typech: se znamínkem (`signed`) a bez znamínka (`unsigned`). Proměnné se znamínkem mohou obsahovat kladná i záporná čísla (samozřejmě včetně nuly). Naopak proměnné bez znamínka mohou obsahovat pouze kladná čísla a nulu. Díky tomu jsou ale schopné pojmout dvakrát větší číslo než proměnné bez znamínka. Normálně jsou všechny proměnné se znamínkem. Potřebujeme-li proměnou bez znaménka, musíme ji při jejím vytváření uvodit slovem `unsigned`.
+Všechny celočíselné proměnné (včetně typu `char`) se mohou vyskytovat ve dvou typech: se znamínkem (`signed`) a bez znamínka (`unsigned`). Proměnné se znamínkem mohou obsahovat kladná i záporná čísla (samozřejmě včetně nuly). Naopak proměnné bez znamínka mohou obsahovat pouze kladná čísla a nulu. Díky tomu jsou ale schopné pojmout dvakrát větší číslo než proměnné se znamínkem. Normálně jsou všechny proměnné se znamínkem. Potřebujeme-li proměnou bez znaménka, musíme ji při jejím vytváření uvodit slovem `unsigned`.
 
 Desetinné proměnné (`float` a `double`) jsou vždy `signed`, nikdy nemohou být `unsigned`! Je to díky tomu jak jsou v PC implementovány.
 
@@ -156,7 +156,7 @@ Kompletní tabulka pro PC
 | `long double`    | desetinné číslo                  | 8  | ±1.7 * 10 ^±308^ (s přesností na 15 číslic)                                              |
 -->
 
-Dále se proměnné dělí na tzv. `lokální` a `globální`. Globální proměnné jsou vytvořené na začátku programu a jsou "viditelné" v celém programu. Naproti tomu lokální proměnné se vytvářejí uvnitř funkcí a jsou "viditelné" pouze ve funkci, ve které byly vytvořeny. Jejich nevýhodou je, že jakmile funkce skončí, všechny její proměnné zaniknou a ztrácí data. Obecně platí, že vytvořím-li proměnou uvnitř složených závorek, proměnná zaniká v okamžiku, kdy program dorazí k uzavírající složené závorce daného páru. Přesto ovšem doporučuji globální proměnné nepoužívat (vysvětlím u funkcí).
+Dále se proměnné dělí na tzv. `lokální` a `globální`. Globální proměnné jsou vytvořené na začátku programu a jsou "viditelné" v celém programu. Naproti tomu lokální proměnné se vytvářejí uvnitř funkcí a jsou "viditelné" pouze ve funkci, ve které byly vytvořeny. Jejich nevýhodou je, že jakmile funkce skončí, všechny její proměnné zaniknou a ztratí data. Obecně platí, že vytvořím-li proměnou uvnitř složených závorek, proměnná zaniká v okamžiku, kdy program dorazí k uzavírající složené závorce daného páru. Přesto ovšem doporučuji globální proměnné nepoužívat (vysvětlím u funkcí).
 
 **Doporučení:** Pojmenovávejte proměnné podle toho, co do nich ukládáte! Budete-li mít v programu 26 proměnných pojmenovaných podle abecedy `a` až `z`, nevyzná se v tom nikdo jiný a za chvilku ani vy ne. Proto například počítám-li s kruhem, budu mít proměnné pojmenované `obsah`, `obvod` a `prumer`. Dále abyste se vyhnuli problémům, používejte v názvech proměnných pouze písmena anglické abecedy, podtržítko ( `_` ) a číslice (název ale nikdy NESMÍ číslicí začínat!).
 
@@ -164,7 +164,7 @@ Dále se proměnné dělí na tzv. `lokální` a `globální`. Globální promě
 
 ```cpp
 //příklad proměnné
-//globální proměnné typu int
+//globální proměnná typu int
 int napeti = 0; //se znaménkem 
 unsigned int prumer = 4; //bez znaménka
 
@@ -176,18 +176,18 @@ int main()
     double obsah; 
     /* Zde jsme sice vytvořili proměnnou obsah, ale nepřiřadili 
     jsme ji žádnou výchozí hodnotu.
-    To doporučujeme nikdy nedělat. Proměnou byste měli mít vždy
-    na začátku nastavit na výchozí hodnotu (např. 0), 
+    To doporučujeme nikdy nedělat. Proměnou byste měli vždy
+    na začátku nastavit výchozí hodnotu (např. 0), 
     i když hodnotu můžu přiřadit dodatečně (viz další řádek). */
 
     obsah = (3.14 * (prumer * prumer)) / 4;
 
     napeti = 5;
     char ch = 'a'; 
-    /* Znakové konstanty píšeme do apostrofu, kdybychom na apostrofy 
+    /* Znakové konstanty píšeme do apostrofů, kdybychom na apostrofy 
     zapomněli, překladač by se snažil do proměnné "ch" uložit hodnotu 
-    proměnné "a" která ovsem neexistuje. To by vedlo k chybě a program 
-    by nesel přeložit. */
+    proměnné "a" která ovšem neexistuje. To by vedlo k chybě a program 
+    by nešel přeložit. */
 
     //další kód    
 } 
@@ -197,7 +197,7 @@ int main()
 
 Potřebuji-li pracovat s více hodnotami stejného typu (nejen datový typ, ale i stejný "význam"), použiji pole. V podstatě se jedná o několik proměnných se stejným názvem, rozlišených číslem (indexem).
 
-Pole vytvoříme stejně jako normální proměnou, ale za její jméno napíšeme do hranatých závorek `[]` velikost pole (kolik bude mít prvků). Počet prvků pole nelze za běhu programu měnit. K prvkům pole potom přistupujeme tak, že napíšeme jméno pole následované opět hranatou závorkou s číslem prvku, se kterým chceme pracovat. **Pozor:** prvky jsou číslované od 0. Vytvoříme-li tedy pole 10 prvků, bude mít první prvek číslo 0 a poslední číslo 9. 
+Pole vytvoříme stejně jako normální proměnnou, ale za její jméno napíšeme do hranatých závorek `[]` velikost pole (kolik bude mít prvků). Počet prvků pole nelze za běhu programu měnit. K prvkům pole potom přistupujeme tak, že napíšeme jméno pole následované opět hranatou závorkou s číslem prvku, se kterým chceme pracovat. **Pozor:** prvky jsou číslované od 0. Vytvoříme-li tedy pole 10 prvků, bude mít první prvek index 0 a poslední 9. 
 
 Pole si můžeme představit jako tabulku s jedním sloupcem a `n` (počet prvků pole) řádky. Můžeme ale mít i pole mající více rozměrů. Dvojrozměrné pole je tabulka mající `n` řádků a `m` sloupců. Při přístupu k jejím prvkům pak indexujeme napřed řádek, potom sloupec. Trojrozměrné pole si můžeme představit jako kvádr složený z malých krychliček z nichž každá představuje jeden prvek pole. Krychličky jsou pak indexované podle jejich Xové, Ypsilonové a Zetové souřadnice v kvádru. U čtyř a více rozměrových polí už normálním lidem selhává představivost :-).
 
@@ -216,7 +216,10 @@ char pole3D[4][5][2];
 /*
 int velikost = 10;
 int pole[velikost];
-Toto NELZE provést, počet prvku v poli musíme při jeho vytváření zadat číslem!
+Toto NELZE provést, počet prvků v poli musíme při jeho vytváření zadat číslem, nikoli promněnnou!
+const int velikost = 10;
+int pole[velikost];
+Toto již provést lze, protože velikost zde není promněnnou, ale pojmenovanou konstantou (nemůžu tedy někde dále v programu napsat velikost = 20;).
 */
 
 // ...
@@ -295,7 +298,7 @@ Používají se téměř výhradně v podmínkách.
 |  `a >>= b`    | proměnná `a` se posune o `b` bitů doprava (jinak řečeno `a = a >> b`)                              |
 
 ### Priorita operátorů 
-Co se ovšem stane, pokud máme v rámci jednoho výrazu více operátorů? Operátory mají různou prioritu (některé mají přednost před jinými) podle následující tabulky (čím nižší     úroveň, tím vyšší priorita daného operátoru). Z pravidla je priorita stejná, jak v matematice. Pokud je ve výrazu více operátorů se stejnou prioritou, postupuje se zpravidla zleva doprava.
+Co se ovšem stane, pokud máme v rámci jednoho výrazu více operátorů? Operátory mají různou prioritu (některé mají přednost před jinými) podle následující tabulky (čím nižší úroveň, tím vyšší priorita daného operátoru). Z pravidla je priorita stejná, jak v matematice. Pokud je ve výrazu více operátorů se stejnou prioritou, postupuje se zpravidla zleva doprava.
 
 |  úroveň  |  operátor                               | popis                                                    |
 | :------: | --------------------------------------- | ----------------------------                             |
@@ -316,7 +319,7 @@ Co se ovšem stane, pokud máme v rámci jednoho výrazu více operátorů? Oper
 
 Pokud si prioritou nejsem jistý, uzavřu podvýrazy mající přednost do kulatých závorek `()` jak v matematice.
 
-Jak jste si asi všimly, nejsou v tabulce priority uvedeny všechny úrovně. To proto, že ne všechny operátory jsou na této stránce uvedeny a nechceme Vám zbytečně zamotat hlavu. Pokud by někdo měl zájem o kompletní seznam operátorů, doporučujeme [wiki](http://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B) nebo [cplusplus.com](http://cplusplus.com/doc/tutorial/operators) (zde jsou i příklady použití). 
+Jak jste si asi všimli, nejsou v tabulce priorit uvedeny všechny úrovně. To proto, že ne všechny operátory jsou na této stránce uvedeny a nechceme Vám zbytečně zamotat hlavu. Pokud by někdo měl zájem o kompletní seznam operátorů, doporučujeme [wiki](http://en.wikipedia.org/wiki/Operators_in_C_and_C%2B%2B) nebo [cplusplus.com](http://cplusplus.com/doc/tutorial/operators) (zde jsou i příklady použití). 
 
 ## Podmínka
 Neboli větvení programu. Umožňuje na základě hodnoty nějakého výrazu rozhodnout, které bloky kódu se provedou, případně neprovedou.
@@ -391,7 +394,7 @@ else
 }
 ```
 
-### Pro pokročilejší:
+### Pro pokročilejší
 
 Jakýkoli výraz v podmínce se převádí na číslo. Pokud je výsledek výrazu 0, podmínka není splněná. Naopak podmínka je splněná pro jakékoli číslo různé od 0.
 
@@ -429,26 +432,26 @@ switch(/*proměnná podle které se rozhoduje*/)
 }
 ```
 
-`switch` se nedá použít k porovnávání dvou proměnných, hodnota všech `case` včetně `default` musí být konstanta.
+`switch` se nedá použít k porovnávání dvou proměnných, hodnota všech `case` musí být konstanta.
 
 **Pozor:** `case` fungují pouze jako jakási návěští, na které program skočí po `switch` a od nich pokračuje dál. Další `case` běh programu nijak neovlivní a pokračuje se příkazy za ním následujícími, dokud se nenarazí na `break;` nebo `switch` neskončí. Toho se dá využít například potřebujeme-li pro více hodnot řídící proměnné  provést stejnou akci.
 
 ## Cyklus `for`
-Používá se pokud chceme nějaký kus kódu několikrát opakovat a víme kolikrát. Například mám tabulku `n` hodnot a potřebuji každou hodnotu zvětšit o 1.
-Aby mohl cyklus počítat kolikrát už proběhl a kolikrát má ještě proběhnout, potřebuje tzv. řídící proměnou.
+Používá se, pokud chceme nějaký kus kódu několikrát opakovat a víme kolikrát. Například mám tabulku `n` hodnot a potřebuji každou hodnotu zvětšit o 1.
+Aby mohl cyklus počítat kolikrát už proběhl a kolikrát má ještě proběhnout, potřebuje tzv. řídicí proměnnou.
 
 ```cpp
-for (/*inicializace/*; /*podmínka*/; /*aktualizace řídící proměnné */)
+for (/*inicializace/*; /*podmínka*/; /*aktualizace řídicí proměnné */)
 {
     //blok kódu, který se má opakovat
 }
 ```
 
-`inicializace` typicky definice a inicializace řídící proměnné ; provádí se pouze jednou před prvním provedením cyklu
+`inicializace` typicky definice a inicializace řídicí proměnné ; provádí se pouze jednou před prvním provedením cyklu
 
 `podmínka` se kontroluje před každým provedením cyklu; cyklus se provádí tak dlouho, dokud podmínka platí (tzn. nemusí se provést ani jednou)
 
-`aktualizace řídící proměnné ` provádí se na konci každého průchodu cyklem
+`aktualizace řídicí proměnné ` provádí se na konci každého průchodu cyklem
 
 **Příklad:**
 
@@ -464,7 +467,7 @@ Co se vlastně děje?
 * na začátku cyklu se vytvoří proměnná `i` s hodnotou 0
 * zkontroluje se podmínka: je-li proměnná i menší než 10, cyklus se provede
    neplatí-li podmínka (proměnná `i` má hodnotu 10 nebo větší), cyklus skončí a program pokračuje prvním příkazem za tělem cyklu (za uzavírající složenou závorkou)
-* provedou se příkazy v těle cyklu 
+* provedou se příkazy v těle cyklu: 
    prvek `i` pole `pole` se inkrementuje (jeho hodnota se zvedne o 1)
 * provede se `++i` - inkrementace proměnné  `i`
 * cyklus se vrátí na začátek na testování podmínky
@@ -482,7 +485,7 @@ Stejně jako u podmínky, je možné mít v sobě vnořených několik cyklů.
 
 ## Cyklus `while` 
 
-Používá se, pokud potřebujeme nějaký kus kódu opakovat dokud platí nějaká podmínka, ale nevíme kolikrát to bude. Typické použití například čekání, dokud uživatel nezmáčkne nějaké tlačítko.
+Používá se, pokud potřebujeme nějaký kus kódu opakovat dokud platí nějaká podmínka, ale nevíme, kolikrát to bude. Typické použití například čekání, dokud uživatel nezmáčkne nějaké tlačítko.
 
 ```cpp
 while (/*podmínka*/)
@@ -501,21 +504,21 @@ do
 } while (/*podmínka*/);
 ```
 
-**Nezapomeňte za** `WHILE()` ; *(středník)*
+**Nezapomeňte za** `while()` ; *(středník)*
 
 ## Příkazy `break` a `continue` 
 Příkazy `break;` a `continue;` se používají uvnitř cyklů k ovlivnění jejich chodu.
 
 * Příkaz `break;` okamžitě přeruší provádění cyklu. Po `break;` se provede první příkaz následující za složenou závorkou uzavírající tělo cyklu.
-* Příkaz `continue;` přeskočí zbytek příkazů v těle cyklu. V cyklu `while` nebo `do-while` skočí na testování řídící podmínky. V cyklu `for` se ještě před testováním řídící podmínky provede aktualizace řídící proměnné .
+* Příkaz `continue;` přeskočí zbytek příkazů v těle cyklu. V cyklu `while` nebo `do-while` skočí na testování řídicí podmínky. V cyklu `for` se ještě před testováním řídicí podmínky provede aktualizace řídicí proměnné .
 
 ## Funkce
 
-Kdybychom  měli celý program psát příkaz po příkazu tak jak jdou za sebou, byl by delší program za chvilku hrozně nepřehledný. Navíc určité kusy kódu by se často opakovaly, protože prostě často je potřeba dělat stejnou věc na různých místech programu. 
+Kdybychom  měli celý program psát příkaz po příkazu tak, jak jdou za sebou, byl by delší program za chvilku hrozně nepřehledný. Navíc určité kusy kódu by se často opakovaly, protože prostě často je potřeba dělat stejnou věc na různých místech programu. 
 
 Způsob jak to udělat lépe jsou právě funkce. Vezmeme několik vzájemně souvisejících příkazů, dělajících dohromady nějakou konkrétní věc a zapouzdříme je do funkce. Když pak v programu potřebujeme tu věc provést, prostě zavoláme danou funkci a je to. 
 
-Při volání můžeme funkci předat nějaké parametry a funkce nám může nějaký parametr vrátit.
+Při volání můžeme funkci předat nějaké parametry a funkce nám může nějakou hodnotu vrátit.
 
 Na příklad potřebujeme na různých místech programu počítat `a`^`n`^ (pro jednoduchost řekněme že `n` jsou celá kladná čísla včetně nuly). Na to v C++ neexistuje operátor, proto si na to musíme napsat vlastní funkci.
 
@@ -529,10 +532,7 @@ funkce vrací číslo typu double;
     proměnná a je lokální (odnikud odjinud než z funkce umocni není vidět)
     - číslo typu unsigned int, ve funkci jako lokální proměnná n  */
 { /*vše co je v těchto složených závorkách se nazývá tělo funkce a provede se 
-pokaždé když funkci zavoláme*/
-    double vysledek = a; 
-    /*vytvořili jsme si lokální proměnnou "vysledek" a inicializovali ji 
-    hodnotou proměnné "a"*/
+pokaždé, když funkci zavoláme*/
 
     if ( n == 0 ) 
     /*podmínka, obsah následujících složených závorek se provede pouze pokud 
@@ -543,11 +543,15 @@ pokaždé když funkci zavoláme*/
           vracet hodnotu, musí byt tato hodnota za return napsaná
           (v tomto případě jedna, neboť cokoli na nultou je jedna) */
     }
+    
+    double vysledek = a; 
+    /*vytvořili jsme si lokální proměnnou "vysledek" a inicializovali ji 
+    hodnotou proměnné "a"*/
 
     for(unsigned int i = 0; i != (n - 1); ++i) 
-    //cyklus pro proměnou i od nuly do hodnotu "n" méně jedna
+    //cyklus pro proměnou i od nuly do hodnoty "n" méně jedna
     {
-        vysledek *= a; //násobení proměnné výsledek proměnou "a"
+        vysledek *= a; //násobení proměnné výsledek proměnnou "a"
     }
 
     return vysledek; 
@@ -570,22 +574,22 @@ int main()
 ```
 
 
-Stejně jak u proměnných, doporučuji pojmenovávat funkce podle toho co dělají.
+Stejně jak u proměnných, doporučuji pojmenovávat funkce podle toho, co dělají.
 
 Z matematiky víme, že výstup funkce závisí pouze na jejím vstupu. Aby to byla pravda, nesmí funkci ovlivňovat žádné jiné faktory. V našem případě to znamená, že návratová hodnota funkce závisí pouze na parametrech, které funkci předáme (toto se samozřejmě netýká funkcí, po kterých chceme například vracet kód uživatelem stisknuté klávesy apod.). Proto by do funkce neměly zasahovat takové věci jako globální proměnná (samozřejmě existují výjimky, kdy vyhnout se použití globální proměnné  ve funkci je prakticky nerealizovatelné). A nemáme-li ve funkcích používat globální proměnné , pak není důvod je mít, jak už jsem psal výše.
 
 ### Rekurzivní funkce 
-Uvnitř funkce mohu volat jiné funkce. Speciální případ je, když funkce ve svém těle volá sama sebe. Takovéto funkci se pak říká rekurzivní. Rekurzivní funkce se dají využít například pro vše zmíněný výpočet mocniny, faktoriálu, nebo třeba pro setřídění pole podle velikosti (samozřejmě to jde i bez rekurze a možná i lépe). Především na mikroprocesorech je ale třeba si uvědomit, že při zavolání každé funkce se někam do paměti ukládá, odkud ta funkce byla volána, aby se tam program po dokončení volané funkce mohl vrátit. Budu-li tedy mít funkci, která uvnitř svého těla volá sama sebe, a to celé se mi opakuje 100x, budu mít v paměti uložených 101 návratových adres (100x rekurze + odkud byla funkce poprvé zavolána). To se na PC nějak přežije (a když ji zavolám 100 000 000?), ale na mikroprocesoru s malou pamětí to povede ke kolapsu programu. A takovéto chyby se pak velice obtížně hledají. Proto s rekurzí velice opatrně!
+Uvnitř funkce mohu volat jiné funkce. Speciální případ je, když funkce ve svém těle volá sama sebe. Takovéto funkci se pak říká rekurzivní. Rekurzivní funkce se dají využít například pro vše zmíněný výpočet mocniny, faktoriálu, nebo třeba pro setřídění pole podle velikosti (samozřejmě to jde i bez rekurze a možná i lépe). Především na mikroprocesorech je ale třeba si uvědomit, že při zavolání každé funkce se někam do paměti ukládá, odkud ta funkce byla volána, aby se tam program po dokončení volané funkce mohl vrátit. Budu-li tedy mít funkci, která uvnitř svého těla volá sama sebe, a to celé se mi opakuje 100×, budu mít v paměti uložených 101 návratových adres (100× rekurze + odkud byla funkce poprvé zavolána). To se na PC nějak přežije (a když ji zavolám 100 000 000?), ale na mikroprocesoru s malou pamětí to povede ke kolapsu programu. A takovéto chyby se pak velice obtížně hledají. Proto s rekurzí velice opatrně!
 
 
 ## Knihovny 
 V okamžiku, kdy mám napsáno několik funkcí, zajišťujících například obsluhu nějaké periferie, je vhodné tyto funkce vyjmout z hlavního zdrojového souboru a vytvořit pro ně soubor vlastní (vhodně pojmenovaný). Takto vytvořeným souborům se říká knihovny, nebo hlavičkové soubory. Zpravidla mívají příponu `.h`. K našemu programu pak takovou knihovnu připojíme pomocí příkazu `#include "/*jméno knihovny*/"` (pozor, za tímto řádkem není středník). Od tohoto okamžiku se můžeme chovat jako by celý obsah přiloženého souboru byl napsán v hlavním zdrojovém souboru.
 
-Výhodou toho je, že takto vytvořenou knihovnu můžeme poté použít ve více programech a nemusím funkce do každého zvlášť kopírovat. Dále to zvedá přehlednost kódu - je-li dlouhý kód rozdělen po kratších kouscích do více souborů, lépe se čte (tedy pokud je rozdělení smysluplné - každý soubor se kompletně stará o jednu věc).
+Výhodou toho je, že takto vytvořenou knihovnu můžeme poté použít ve více programech a nemusíme funkce do každého zvlášť kopírovat. Dále to zvedá přehlednost kódu - je-li dlouhý kód rozdělen po kratších kouscích do více souborů, lépe se čte (tedy pokud je rozdělení smysluplné - každý soubor se kompletně stará o jednu věc).
 
-Standardní knihovny se připojují pomocí `#include </*jméno knihovny*/>`.
+Standardní knihovny (ty dodávané s překladačem) se připojují pomocí `#include </*jméno knihovny*/>`.
 
-Pro seznam standardních knihoven na PC doporučuji stránky http://cplusplus.com/reference/. Jsou sice anglicky, ale najdete zde kompletní standardní knihovny i s příklady použití.
+Pro seznam standardních knihoven na PC doporučuji stránky http://cplusplus.com/reference/. Jsou sice anglicky, ale najdete zde kompletní standardní knihovny i s příklady použití (pozor, značná část zde popsaných věcí funguje na PC, ale už ne na mikroprocesorech).
 
 Nejpoužívanější knihovny na mikroprocesorech Atmel:
 

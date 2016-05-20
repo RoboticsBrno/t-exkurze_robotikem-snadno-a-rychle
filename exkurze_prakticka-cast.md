@@ -1,4 +1,4 @@
-﻿---
+---
 geometry: margin=3cm
 urlcolor: blue
 ---
@@ -9,11 +9,11 @@ V této kapitole si vyzkoušíme rozpohybovat robota. Nejprve si doma zkusíte n
 
 ![Ukázka simulátoru v akci](YS_Tutorial/1.0 YS - example.PNG "Ukázka simulátoru v akci"){ width=95% }
 
-Jako virtuální simulátor využijeme aplikaci, kterou naprogramoval Bedřich Said v rámci svojí práce SOČ. Její název je [Simulátor Yunimin](https://bitbucket.org/bsaid/simulator-yunimin) (pozn. název vznikl podle našeho nejstaršího výukového robota Yunimin, simulátor je ale univerzální a proto mi budeme využívat rozhraní pro robot Pololu 3pi, kterého máme na Robotárně minimálně v 10 kusech). 
+Jako virtuální simulátor využijeme aplikaci, kterou naprogramoval Bedřich Said v rámci svojí práce SOČ. Její název je [Simulátor Yunimin](https://bitbucket.org/bsaid/simulator-yunimin) (pozn. název vznikl podle našeho nejstaršího výukového robota Yunimin, simulátor je ale univerzální a my ho budeme využívat pro robota Pololu 3pi). 
 
 ## Jak rozběhnout simulátor
 
-Pro zprovoznění simulátoru budete nejprve potřebovat nainstalovat vývojové prostředí pro Qt framework. Qt framework je soubor knihoven pro multiplatformní vývoj. Umožňuje vám  naprogramovat aplikaci, která prakticky bez jakýchkoliv úprav bude fungovat jak na Windows, tak na Linuxu nebo Macu. To je taktéž jeden z důvodů, proč využíváme toto vývojové prostředí. Bohužel momentálně máme problém s jednou částí simulátoru a proto jej lze zatím provozovat jen na Windows.
+Pro zprovoznění simulátoru budete nejprve potřebovat nainstalovat vývojové prostředí pro Qt framework. Qt framework je soubor knihoven pro multiplatformní vývoj. Umožňuje vám  naprogramovat aplikaci, která prakticky bez jakýchkoliv úprav (stačí pouze překompilovat) bude fungovat jak na Windows, tak na Linuxu i na Macu. To je taktéž jeden z důvodů, proč využíváme toto vývojové prostředí. Bohužel momentálně máme problém s jednou částí simulátoru a proto jej lze zatím provozovat jen na Windows.
 
 ### Instalace prostředí Qt
 
@@ -25,7 +25,7 @@ Po stažení a nainstalování prostředí si musíte [`stáhnout Simulátor Yun
 
 ### Spuštění simulátoru
 
-Simulátor se skládá ze tří samostatných aplikací. Základní stavebním kamenem je server, na kterém běží samotná simulace. Vy jako uživatel si můžete průběh simulace prohlížet pomocí vieweru. Server i viewer spustíte jako samostatné .EXE soubory. 
+Simulátor se skládá ze tří samostatných aplikací. Základním stavebním kamenem je server, na kterém běží samotná simulace. Vy jako uživatel si můžete průběh simulace prohlížet pomocí vieweru. Server i viewer spustíte jako samostatné .EXE soubory. 
 
 **Server**
 
@@ -40,7 +40,7 @@ Otevře se vám okno zobrazující simulátor.
 
 ![YuniminViewer po startu](YS_Tutorial/1.2.0 YV - start.PNG "YuniminViewer po startu"){ width=80% }
 
-Po startu programu je ovšem ještě třeba viewer připojit k serveru (tyto dvě aplikace běží zcela nezávisle a například server může běžet úplně někde jinde než viewer nebo klient).
+Po startu programu je ovšem ještě třeba viewer připojit k serveru (tyto dvě aplikace běží zcela nezávisle a například server může běžet na úplně jiném počítači, než viewer nebo klient).
 To provedeme tak, že si v horní nabídce otevřeme `Connect` a vybereme `Connect to server`. Následně se nám zobrazí okno s nastavením připojení. 
 
 ![YuniminViewer - okno s nastavením připojení](YS_Tutorial/1.2.2 YV - new connection - open.PNG "YuniminViewer - okno s nastavením připojení"){ width=80% }
@@ -63,7 +63,7 @@ V projektu rozklikneme složku `Source` a poklepáním otevřeme soubor `main.cp
 
 ![Otevřený QT Creator s projektem YuniminClient](YS_Tutorial/1.3.0 YC-QT - open.PNG "Otevřený QT Creator s projektem YuniminClient"){ width=75% }
 
-Nyní byste měli vidět zdrojový kód vašeho robota s předpřipraveným ukázkovým kódem předvádějící práci s komunikační linkou, tlačítky, motory a senzory. 
+Nyní byste měli vidět zdrojový kód programu pro vašeho robota, s předpřipraveným ukázkovým kódem, předvádějícím práci s komunikační linkou, tlačítky, motory a senzory. 
 
 ![Otevřený projektem YuniminClient - main.cpp \label{1.3.2 YC-QT - open project setting}](YS_Tutorial/1.3.2 YC-QT - open project setting.PNG "Otevřený projekt YuniminClient - main.cpp"){ width=75% }
 
@@ -85,11 +85,11 @@ Pro spuštění programu je potřeba kliknout na zelenou šipku v levé boční 
 
 Po zmáčknutí zelené šipky začne probíhat `Build`, což nám indikuje ukazatel v pravém dolním rohu. Pokud proběhne vše v pořádku, tak se ukazatel zaplní zelenou barvou a program se spustí.
 
-Pokud se program nespustil, tak QT Creator narazil při kompilaci/buildování na chybu, která neumožňuje vytvořit a spustit program. Ve spodní liště by se pak měla otevřít nabídka `Issues` a v ní by měli být vypsány všechny problémy nalezené při kompilaci. V případě, že na podobný problém narazíte, snažte se řešit problémy od prvního k poslednímu a pokaždé, když si myslíte, že jste odstranili alespoň jednu chybu, tak program znovu zkompilujte. Často se totiž stává, že jedna chyba generuje několik `Issues/Errorů`, tudíž po odstranění první chyby mohou zmizet i všechny další. 
+Pokud se program nespustil, tak QT Creator narazil při kompilaci/buildování na chybu, která neumožňuje vytvořit a spustit program. Ve spodní liště by se pak měla otevřít nabídka `Issues` a v ní by měly být vypsány všechny problémy nalezené při kompilaci. V případě, že na podobný problém narazíte, snažte se řešit problémy od prvního k poslednímu a pokaždé, když si myslíte, že jste odstranili alespoň jednu chybu, tak program znovu zkompilujte. Často se totiž stává, že jedna chyba generuje několik `Issues/Errorů`, tudíž po odstranění první chyby mohou zmizet i všechny další. 
 
 ![QT Creatoru - kompilace/buildování programu](YS_Tutorial/1.4.1 YC-QT - build.PNG "QT Creatoru - kompilace/buildování programu"){ width=75% }
 
-Když program naběhne zobrazí se nám terminál. Pokud vše proběhne v pořádku, měli byste v něm vidět přesně to stejné jako na obrázku \ref{1.4.2 YC-QT-Terminal - open}. Znamená to, že program se spustil, připojil k serveru a již čeká jen na zmáčknuti tlačítka `F1`. Pokud se tak nestane, pravděpodobně není spuštěn server nebo se nepodařilo načíst konfigurační soubor (možná jste vynechali krok s `Shadow build`).
+Když program naběhne, zobrazí se nám terminál. Pokud vše proběhne v pořádku, měli byste v něm vidět přesně to stejné jako na obrázku \ref{1.4.2 YC-QT-Terminal - open}. Znamená to, že program se spustil, připojil k serveru a již čeká jen na zmáčknuti tlačítka `F1`. Pokud se tak nestane, pravděpodobně není spuštěn server nebo se nepodařilo načíst konfigurační soubor (možná jste vynechali krok s `Shadow build`).
 
 
 ![QT Creatoru - spuštěný program \label{1.4.2 YC-QT-Terminal - open}](YS_Tutorial/1.4.2 YC-QT-Terminal - open.PNG "QT Creatoru - spuštěný program"){ width=75% }
@@ -98,7 +98,7 @@ Když program naběhne zobrazí se nám terminál. Pokud vše proběhne v pořá
 ![Viewer - spuštěný program](YS_Tutorial/1.4.4 YV - program started.PNG "Viewer - spuštěný program"){ width=58% }
 
 
-Ve vieweru se nyní objevila `myš`, která představuje vašeho robota. Vzhled robota je pevně nastaven a nedá se měnit. 
+Ve vieweru se nyní objevila `myš`, která představuje vašeho robota. Vzhled robota je pevně nastaven a momentálně se nedá změnit. 
 
 Server by měl zobrazit připojení nového klienta (poslední dva řádky  na obrázku \ref{1.4.5 YS-Terminal - client connected}).
 
@@ -118,12 +118,12 @@ Program robota zastavíte tak, že se přepnete do klientova okna terminálu a z
 
 ![QT Creator - můžete začít programovat \label{1.5.0 YC-QT - programing}](YS_Tutorial/1.5.0 YC-QT - programing.PNG "QT Creator - můžete začít programovat"){ width=68% }
 
-Nyní již víte jak obsluhovat simulátor a můžete tedy začít programovat robota.
+Nyní již víte, jak obsluhovat simulátor a můžete tedy začít programovat robota.
 
 
 ## Jak programovat robota
 
-V rámci T-exkurze budeme pracovat s robotem [Pololu 3pi](https://www.pololu.com/product/975), proto je simulátor nastaven tak, aby se chování robota, co nejvíce podobalo chování reálnému robotovi.
+V rámci T-exkurze budeme pracovat s robotem [Pololu 3pi](https://www.pololu.com/product/975). Simulátor je proto nastaven tak, aby se chování virtuálního robota co nejvíce podobalo reálnému.
 
 ### Popis robota Pololu 3pi
 
@@ -139,7 +139,7 @@ V simulátoru lze využít většinu součásti robota až na displej a bzučák
 
 ### Programování robota
 
-Pro robota Pololu 3pi nachystal Vojta Boček knihovnu, která usnadňuje jeho programování. Knihovna obsahuje prakticky vše, co robot může dělat. Dokumentaci knihovny naleznete na těchto webových stránkách: <https://github.com/Tasssadar/3piLib/wiki>
+Pro robota Pololu 3pi nachystal Vojta Boček knihovnu, která usnadňuje jeho programování. Knihovna obsahuje prakticky vše, co robot může dělat. Dokumentaci knihovny naleznete na jeho webových stránkách: <https://github.com/Tasssadar/3piLib/wiki>.
 
 Jak již ale bylo řečeno, simulátor nepodporuje displej a bzučák, takže tyto komponenty nelze v simulátoru využít.
 
@@ -147,14 +147,14 @@ Jak již ale bylo řečeno, simulátor nepodporuje displej a bzučák, takže ty
 
 Na začátek bude nejlepší upravit si zdrojový soubor `main.cpp` v klientovi tak, že odstraníte vše uvnitř funkce `void run()` a budete si postupně zkoušet jednotlivé funkce.
 
-Zkuste si rozjet robota tak, aby jezdil do kruhu, pak můžete zkusit s robotem jezdit ve spirále, oběd obdélník, trojúhelník, měnit velikost jednotlivých stran (zkuste použít i složitější konstrukce jazyka C++ jako podmínka a cyklus).
+Zkuste si rozjet robota tak, aby jezdil do kruhu, pak můžete zkusit s robotem jezdit ve spirále, objet obdélník, trojúhelník, měnit velikost jednotlivých stran a podobně (zkuste použít i složitější konstrukce jazyka C++ jako podmínka a cyklus).
 
-Pro inspiraci přidáváme odkaz na ukázku jednoduchých programů (možná bude třeba pro simulátor doladit časové konstanty - `delay()` v ukázkových programech): <http://robotikabrno.cz/robotika-brno/navody/robot-pololu-3pi>
+Pro inspiraci přidáváme odkaz na ukázku jednoduchých programů (možná bude třeba pro simulátor doladit časové konstanty - `delay()` v ukázkových programech): <http://robotikabrno.cz/robotika-brno/navody/robot-pololu-3pi>.
 
 ## Zadání úkolu
 
-Až si projdete jednotlivé funkce a vyzkoušíte si, co vše s robotem lze dělat můžete přejít na řešení úkolu (není to tedy úplně podmínkou, lze úkol vyřešit i bez vyzkoušení si simulátoru, ale chtěli bychom aby jste si vyzkoušeli s robotem pracovat již doma a pak abychom již v rámci samotné T-exkurze mohli přejít ke složitějším věcem). 
+Až si projdete jednotlivé funkce a vyzkoušíte si, co vše s robotem lze dělat, můžete přejít na řešení úkolu (není to tedy úplně podmínkou, lze úkol vyřešit i bez vyzkoušení si simulátoru, ale chtěli bychom, aby jste si vyzkoušeli s robotem pracovat již doma a pak abychom již v rámci samotné T-exkurze mohli přejít ke složitějším věcem). 
 
-Vašim úkolem bude navrhnout program nebo algoritmus, díky kterému bude jezdit robot po čáře. Chceme jen základní algoritmus nebo program
+Vaším úkolem bude navrhnout program (algoritmus), díky kterému bude robot jezdit po čáře. Chceme jen základní program.
 
 
