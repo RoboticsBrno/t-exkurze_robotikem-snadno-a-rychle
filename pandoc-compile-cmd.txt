@@ -1,1 +1,5 @@
 pandoc .\exkurze.md -s --highlight-style tango --number-section -V lang=cs --toc -o t-exkurze_robotikem-snadno-a-rychle.pdf
+
+pandoc .\exkurze_prakticka-cast.md -s --highlight-style tango --number-section -V lang=cs -o exkurze_prakticka-cast.pdf
+
+pandoc .\exkurze_prakticka-cast.md -s --highlight-style tango --number-section -V lang=cs -o exkurze_prakticka-cast.pdf; FoxitReader.exe .\exkurze_prakticka-cast.pdf /A nolock=1
