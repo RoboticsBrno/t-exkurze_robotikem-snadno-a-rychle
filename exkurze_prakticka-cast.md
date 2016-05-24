@@ -73,13 +73,13 @@ Za chvíli si tento program zkusíme spustit, ale ještě před tím musíme zko
 
 V nabídce `Projects` lze nastavit prakticky vše k danému projektu. Od konfigurace kompilace až po nastavení editoru textu v Qt (jak chcete odsazovat text, jakou barvu mají mít jednotlivé konstrukce jazyka, kolik mezer má představovat jeden tabulátor atd.). 
 
-Po otevření nabídky musíte ověřit zda je deaktivované políčko `Shadow build`, které umožňuje kompilaci/buildování programu mimo adresář se zdrojovým kódem. My ale pro správnou funkčnost klienta potřebujeme zajistit kompilaci/buildování v rámci adresáře se zdrojovým kódem. Pokud je tedy políčko `Shadow build` aktivováno, tak jej kliknutím deaktivujte.
+Po otevření nabídky musíte ověřit zda je deaktivované políčko `Shadow build`, které umožňuje kompilaci/buildování programu mimo adresář se zdrojovým kódem. My ale pro správnou funkčnost klienta potřebujeme zajistit kompilaci/buildování v rámci adresáře se zdrojovým kódem. Pokud je tedy políčko `Shadow build` aktivováno, tak jej kliknutím deaktivujte a nastavení uložte (`CTRL + S`).
 
 Nyní se můžeme vrátit do editoru pomocí ikonky `Edit` v levé boční liště a přejdeme ke spuštění našeho programu/robota.
 
 ![QT Creatoru - Project:  návrat do editoru](YS_Tutorial/1.3.4 YC-QT - projects setting - shadow build disabled.PNG "QT Creatoru - Project: návrat do editoru"){ width=75% }
 
-Pro spuštění programu je potřeba kliknout na zelenou šipku v levé boční liště (ta bez brouka :-)), případně můžete použít i klávesovou zkratku `CTRL + R`. Šipka s broukem slouží pro takzvaný debug režim. Díky tomuto režimu lze krokovat program po jednotlivých řádcích a zjišťovat, co se kde děje. Krokování využijete převážně při hledání chyb, což momentálně není náš případ.
+Pro spuštění programu je potřeba kliknout na zelenou šipku v levé boční liště (ta bez brouka :-)), případně můžete použít i klávesovou zkratku `CTRL + R`. Šipka s broukem slouží pro takzvaný debug režim. Díky tomuto režimu lze krokovat program po jednotlivých řádcích a zjišťovat, co se kde děje. Krokování se využívá převážně při hledání chyb, což momentálně není náš případ.
 
 ![QT Creatoru - spouštění programu](YS_Tutorial/1.4.0 YC-QT - run.PNG "QT Creatoru - spuštění programu"){ width=75% }
 
@@ -155,6 +155,14 @@ Pro inspiraci přidáváme odkaz na ukázku jednoduchých programů (možná bud
 
 Až si projdete jednotlivé funkce a vyzkoušíte si, co vše s robotem lze dělat, můžete přejít na řešení úkolu (není to tedy úplně podmínkou, lze úkol vyřešit i bez vyzkoušení si simulátoru, ale chtěli bychom, aby jste si vyzkoušeli s robotem pracovat již doma a pak abychom již v rámci samotné T-exkurze mohli přejít ke složitějším věcem). 
 
-Vaším úkolem bude navrhnout program (algoritmus), díky kterému bude robot jezdit po čáře. Chceme jen základní program.
+Vaším úkolem bude navrhnout program (algoritmus), díky kterému bude robot jezdit po čáře. Chceme jen základní program nebo popis algoritmu. Snažte se navrhnout řešení, které bude založeno na funkci, která bude mít na vstupu jako proměnné hodnoty ze senzorů `S1` až `S5` (pro zjednodušení lze vynechat prostřední senzor) a na výstupu bude `error`, který následně budete přičítat nebo odčítat k jednotlivým motorům. Pokuste se vyhnout složitým konstrukcím s hromadou podmínek, které by řešili jednotlivé stavy, ale využijte výhodu funkce, která může snadněji řešit všechny stavy.
+
+Vaše řešení odevzdejte do 30. května do informačního systému JCMM. Program odevzdávejte ve formě textového souboru, tak aby se dal jednoduše otestovat v simulátoru. Pokud budete odevzdávat slovní popis algoritmu, převeďte jej do PDF (vyhněte se odevzdávání Wordových dokumentů).
+Na závěr prosím do poznámky uveďte, zda by vám více vyhovoval úterní (14. 6. 2016) nebo čtvrteční (16. 6. 2016) termín T-exkurze. Výsledky budou k dispozici do 5 dnů po 30. květnu.
+
+Pokud byste měli jakýkoliv problém nebo dotaz, nebojte se na nás obrátit. Rádi vám pomůžeme. Můžete nám napsat na <robotarna@robotikabrno.cz> nebo volejte na +420 603 366 463.
+
+Doufáme, že se vám praktická část bude líbit a již se těšíme, až se s vámi osobně potkáme.
+  
 
 
