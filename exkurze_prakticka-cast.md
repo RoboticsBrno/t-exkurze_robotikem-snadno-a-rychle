@@ -1,7 +1,13 @@
 ---
+title: T-exkurze - Robotikem snadno a rychle - A teď něco prakticky
+author: Jaroslav Páral a Jakub Streit (Robotárna, Dům detí a mládeže Helceletova)
+date: 25.5.2016 13:30
 geometry: margin=3cm
 urlcolor: blue
 ---
+
+\newpage
+
 
 # A teď něco prakticky
 
@@ -17,11 +23,11 @@ Pro zprovoznění simulátoru budete nejprve potřebovat nainstalovat vývojové
 
 ### Instalace prostředí Qt
 
-Stáhněte si vývojové prostředí pro Qt (Qt Creator) ze [`stránek výrobce`](https://www.qt.io/download-open-source/). Zvolte si vhodnou verzi dle vašeho operačního systému (32/64-bit) a nainstalujte jej. Nejlepší volba pro vás pravděpodobně bude [`Qt 5.6.0 for Windows 64-bit (VS 2015, 836 MB)`](http://download.qt.io/official_releases/qt/5.6/5.6.0/qt-opensource-windows-x86-msvc2015_64-5.6.0.exe).
+Stáhněte si vývojové prostředí pro Qt (Qt Creator) ze [`stránek výrobce`](https://www.qt.io/download-open-source/). Zvolte si vhodnou verzi dle vašeho operačního systému (32/64-bit) a nainstalujte jej. Nejlepší volba pro vás je [`Qt 5.6.0 for Windows 32-bit (MinGW 4.9.2, 1.0 GB)`](http://download.qt.io/official_releases/qt/5.6/5.6.0/qt-opensource-windows-x86-mingw492-5.6.0.exe).
 
 ### Stažení simulátoru
 
-Po stažení a nainstalování prostředí si musíte [`stáhnout Simulátor Yunimin`](https://bitbucket.org/bsaid/simulator-yunimin/downloads). Vyberte nejaktuálnější archiv (při psaní návodu to byla [`SimulatorYunimin1.0.3.zip`](https://bitbucket.org/bsaid/simulator-yunimin/downloads/SimulatorYunimin1.0.3.zip)). Po stažení archivu jej rozbalte do vašeho pracovního adresáře.
+Po stažení a nainstalování prostředí si musíte [`stáhnout Simulátor Yunimin`](https://bitbucket.org/bsaid/simulator-yunimin/downloads). Vyberte nejaktuálnější archiv (při psaní návodu to byla [`SimulatorYunimin1.0.4.zip`](https://bitbucket.org/bsaid/simulator-yunimin/downloads/SimulatorYunimin1.0.4.zip)). Po stažení archivu jej rozbalte do vašeho pracovního adresáře.
 
 ### Spuštění simulátoru
 
@@ -157,10 +163,10 @@ Až si projdete jednotlivé funkce a vyzkoušíte si, co vše s robotem lze děl
 
 Vaším úkolem bude navrhnout program (algoritmus), díky kterému bude robot jezdit po čáře. Chceme jen základní program nebo popis algoritmu. Snažte se navrhnout řešení, které bude založeno na funkci, která bude mít na vstupu jako proměnné hodnoty ze senzorů `S1` až `S5` (pro zjednodušení lze vynechat prostřední senzor) a na výstupu bude `error`, který následně budete přičítat nebo odčítat k jednotlivým motorům. Pokuste se vyhnout složitým konstrukcím s hromadou podmínek, které by řešili jednotlivé stavy, ale využijte výhodu funkce, která může snadněji řešit všechny stavy.
 
-Vaše řešení odevzdejte do 30. května do informačního systému JCMM. Program odevzdávejte ve formě textového souboru, tak aby se dal jednoduše otestovat v simulátoru. Pokud budete odevzdávat slovní popis algoritmu, převeďte jej do PDF (vyhněte se odevzdávání Wordových dokumentů).
-Na závěr prosím do poznámky uveďte, zda by vám více vyhovoval úterní (14. 6. 2016) nebo čtvrteční (16. 6. 2016) termín T-exkurze. Výsledky budou k dispozici do 5 dnů po 30. květnu.
+Vaše řešení odevzdejte do 30.\ května do informačního systému JCMM. Program odevzdávejte ve formě textového souboru, tak aby se dal jednoduše otestovat v simulátoru. Pokud budete odevzdávat slovní popis algoritmu, převeďte jej do PDF (vyhněte se odevzdávání Wordových dokumentů).
+Na závěr prosím do poznámky uveďte, zda by vám více vyhovoval úterní (14.\ 6.\ 2016) nebo čtvrteční (16.\ 6.\ 2016) termín T-exkurze. Výsledky budou k dispozici do 5\ dnů po 30.\ květnu.
 
-Pokud byste měli jakýkoliv problém nebo dotaz, nebojte se na nás obrátit. Rádi vám pomůžeme. Můžete nám napsat na <robotarna@robotikabrno.cz> nebo volejte na +420 603 366 463.
+Pokud byste měli jakýkoliv problém nebo dotaz, nebojte se na nás obrátit. Rádi vám pomůžeme. Můžete nám napsat na <robotarna@robotikabrno.cz> nebo volejte na +420\ 603\ 366\ 463.
 
 Doufáme, že se vám praktická část bude líbit a již se těšíme, až se s vámi osobně potkáme.
   
