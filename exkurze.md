@@ -1,9 +1,12 @@
 ---
 title: T-exkurze - Robotikem snadno a rychle
 author: Jaroslav Páral a Jakub Streit (Robotárna, Dům detí a mládeže Helceletova)
-date: 2.5.2016
+date: 25.5.2016 13:30
 geometry: margin=3cm
+urlcolor: blue
 ---
+
+\newpage
 
 # Uvítání
 
@@ -21,7 +24,6 @@ Nyní je Vám k dispozici teoretická část materiálů. Praktická část a te
 
 Robot může mít mnoho podob. Většině z vás se asi vybaví terminátora, R2-D2 nebo Číslo 5 žije.
 
-
 ![Robot BB-8 ze Star Wars](BB8.jpg "Voyage to the moon"){ width=70% }
 
 Robotem ovšem nazýváme i kuchyňský mixér, robotický vysavač podlahy nebo autonomní stroje jezdící na herním hřišti.
@@ -34,6 +36,8 @@ Robotického dne v Praze
 --->
 
 Vidíte tedy, že představa o tom, co je to tedy robot, může být různá. My se budeme bavit o jednodušších autonomních robotech, zaměřených na plnění soutěžních úloh, jak můžete například vidět na obrázku výše.
+
+\newpage
 
 # Z čeho se robot skládá
 
@@ -77,6 +81,8 @@ Napájení je jednou z nejdůležitějších částí robota. Napájení musí b
 
 Robota lze napájet přes kabel, pomocí baterií, ale také bezdrátově. Většinou se dnes využívají baterie a to ať už klasické NiMH, Pb nebo modernější typy jako Li-Pol, Li-Fe, Li-ion. U baterií Li-xxx je problém s jejich větší náchylností na zničení. Nesmíte je pod vybýt, dlouhodobě nechat nabyté na 100 % kapacity nebo například z nich brát moc velké proudy. I tyto problémy komplikují řešení napájení bateriových robotů.
 
+\newpage
+
 # Základy programování
 
 V této části se seznámíme se základy programovacího jazyka C/C++. Povíme si něco o proměnných, podmínkách, cyklech atd.
@@ -100,7 +106,11 @@ Proměnná je kus paměti počítače, který si můžeme v programu vyhradit pr
 
 Všechny celočíselné proměnné (včetně typu `char`) se mohou vyskytovat ve dvou typech: se znamínkem (`signed`) a bez znamínka (`unsigned`). Proměnné se znamínkem mohou obsahovat kladná i záporná čísla (samozřejmě včetně nuly). Naopak proměnné bez znamínka mohou obsahovat pouze kladná čísla a nulu. Díky tomu jsou ale schopné pojmout dvakrát větší číslo než proměnné se znamínkem. Normálně jsou všechny proměnné se znamínkem. Potřebujeme-li proměnou bez znaménka, musíme ji při jejím vytváření uvodit slovem `unsigned`.
 
-Desetinné proměnné (`float` a `double`) jsou vždy `signed`, nikdy nemohou být `unsigned`! Je to díky tomu jak jsou v PC implementovány.
+Desetinné proměnné (`float` a `double`) jsou vždy `signed`, nikdy nemohou být `unsigned`! Je to díky tomu jak jsou v PC implementovány. 
+
+U desetinných proměnných se můžete setkat se speciálními `stavy`, které mohou zastupovat záporné/kladné nekonečno (vzniká většinou při dělení nulou) nebo `NaN` (`Not a number` - indikuje stav, kdy například daná hodnota nenáleží do daného oboru hodnot).
+
+\newpage
 
 **Základní datové typy u mikrokontrolérů Atmel Mega**
 
@@ -216,10 +226,12 @@ char pole3D[4][5][2];
 /*
 int velikost = 10;
 int pole[velikost];
-Toto NELZE provést, počet prvků v poli musíme při jeho vytváření zadat číslem, nikoli promněnnou!
+Toto NELZE provést, počet prvků v poli musíme při jeho vytváření zadat číslem,
+nikoli promněnnou!
 const int velikost = 10;
 int pole[velikost];
-Toto již provést lze, protože velikost zde není promněnnou, ale pojmenovanou konstantou (nemůžu tedy někde dále v programu napsat velikost = 20;).
+Toto již provést lze, protože velikost zde není promněnnou, ale pojmenovanou 
+konstantou (nemůžu tedy někde dále v programu napsat velikost = 20;).
 */
 
 // ...
@@ -248,6 +260,8 @@ pole3D[1][1][0] = 'a';
 |  `++a`        | inkrementace (zvětšení o jednu) proměnné `a` (jinak řečeno `a = a + 1`)                    | 
 |  `--a`        | dekrementace (zmenšení o jednu) proměnné `a` (jinak řečeno `a = a - 1`)                    | 
 |  `-a`         | unární mínus ( `a * (-1)` )                                                                | 
+
+\newpage
 
 ### Bitové
 
@@ -602,6 +616,8 @@ Nejpoužívanější knihovny na mikroprocesorech Atmel:
 |  avrlib           | soubor knihoven pro mikroprocesory Atmel napsaný u nás na Robotárně |
 |                   | ke stažení <http://technika.tasemnice.eu/trac/browser/avrlib> |
 
+
+\newpage
 
 # Pozvánka na naše další akce
 
