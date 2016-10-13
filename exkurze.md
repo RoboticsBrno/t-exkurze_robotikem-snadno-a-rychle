@@ -1,7 +1,7 @@
 ---
 title: T-exkurze - Robotikem snadno a rychle
 author: Jaroslav Páral a Jakub Streit (Robotárna, Dům detí a mládeže Helceletova)
-date: 28.5.2016 0:10
+date: 9.10.2016 10:13
 geometry: margin=3cm
 urlcolor: blue
 ---
@@ -818,9 +818,9 @@ Pro inspiraci přidáváme odkaz na ukázku jednoduchých programů (možná bud
 Až si projdete jednotlivé funkce a vyzkoušíte si, co vše s robotem lze dělat, můžete přejít na řešení úkolu (není to tedy úplně podmínkou, lze úkol vyřešit i bez vyzkoušení si simulátoru, ale chtěli bychom, aby jste si vyzkoušeli s robotem pracovat již doma a pak abychom již v rámci samotné T-exkurze mohli přejít ke složitějším věcem). 
 
 Vaším úkolem bude navrhnout program (algoritmus), díky kterému bude robot jezdit po čáře. Chceme jen základní program nebo popis algoritmu. Snažte se navrhnout řešení v podobě funkce, která bude mít na vstupu jako proměnné hodnoty ze senzorů `S1` až `S5` (pro zjednodušení lze vynechat prostřední senzor) a na výstupu bude `error`, který následně budete přičítat nebo odčítat k jednotlivým motorům. Pokuste se vyhnout složitým konstrukcím s hromadou podmínek, které by řešili jednotlivé stavy, ale využijte výhodu funkce, která může snadněji řešit všechny stavy.
-
-Vaše řešení odevzdejte do 30.\ května do informačního systému JCMM. Program odevzdávejte ve formě textového souboru, tak aby se dal jednoduše otestovat v simulátoru. Pokud budete odevzdávat slovní popis algoritmu, převeďte jej do PDF (vyhněte se odevzdávání Wordových dokumentů).
-Na závěr prosím do poznámky uveďte, zda by vám více vyhovoval úterní (14.\ 6.\ 2016) nebo čtvrteční (16.\ 6.\ 2016) termín T-exkurze. Výsledky budou k dispozici do 5\ dnů po 30.\ květnu.
+ 
+Vaše řešení odevzdejte do 6.\ listopadu do informačního systému JCMM. Program odevzdávejte ve formě textového souboru, tak aby se dal jednoduše otestovat v simulátoru. Pokud budete odevzdávat slovní popis algoritmu, převeďte jej do PDF (vyhněte se odevzdávání Wordových dokumentů).
+Na závěr prosím do poznámky uveďte, zda by vám více vyhovoval čtvrteční (24.\ 11.\ 2016) nebo páteční (25.\ 11.\ 2016) termín T-exkurze. Výsledky budou k dispozici do 5\ dnů po 6.\ listopadu.
 
 Pokud byste měli jakýkoliv problém nebo dotaz, nebojte se na nás obrátit. Rádi vám pomůžeme. Můžete nám napsat na <robotarna@robotikabrno.cz> nebo volejte na +420\ 603\ 366\ 463.
 
@@ -831,20 +831,14 @@ Doufáme, že se vám praktická část bude líbit a již se těšíme, až se 
 
 # Pozvánka na naše další akce
 
-Pokud byste si chtěli robotické a programátorské znalosti dále rozšiřovat, tak přes letní prázdniny pořádáme několik akcí se zaměřením na robotiku, elektroniku, 3D návrh a programování. Podívejte se, zda by vás také nelákaly? :-)
+Pokud byste si chtěli robotické a programátorské znalosti dále rozšiřovat, tak se podívejte na naše další aktivity níže nebo nás [sledujte na FB stránce RobotikaBrno](https://www.facebook.com/robotikabrno/).
 
-## Seznam akcí
+**Kurzy na Robotárně**  
+(Programování mikroprocesorů na Arduinu, programování pro PC, 3D modelování, elektronika, LEGO Mindstorms EV3, Základy programování pro Android, ...)  
+<http://robotikabrno.cz/robotarna/krouzky>
 
-**Robotický tábor 2016 - Naučme se s Arduinem**  
-sobota 9. 7. – sobota 16. 7. 2016  
-<http://robotikabrno.cz/robotarna/tabory/roboticky-tabor-2016>
+**Robotický tábor 2017 - Naučme se s Arduinem**  
+sobota 8. 7. – sobota 15. 7. 2017  
+<http://robotikabrno.cz/robotarna/tabory/roboticky-tabor-2017>
 
-**Příměstský tábor 2016 - Naučme se s Arduinem**  
-pondělí 8. 8. – pátek 12. 8. 2016 (od 9:00 do 16:00)  
-<http://robotikabrno.cz/robotarna/tabory/primestsky-tabor-2016>
-
-**Třídenní kurzy**  
-Základy 3D modelování  
-Základy návrhu plošných spojů  
-pondělí 15. 8. – středa 17. 8. 2016 (od 9:00 do 17:00)  
-<http://robotikabrno.cz/robotarna/kurzy/kurzy-eagle-a-solidworks-2016>
+![Robotárna - humanoid](Robotarna_humanoid.png "Robotárna - humanoid"){ width=80% }
