@@ -1,7 +1,7 @@
 ---
 title: T-exkurze - Robotikem snadno a rychle - A teď něco prakticky
 author: Jaroslav Páral a Jakub Streit (Robotárna, Dům detí a mládeže Helceletova)
-date: 27.5.2016 23:50
+date: 9.10.2016 10:50
 geometry: margin=3cm
 urlcolor: blue
 ---
@@ -207,8 +207,8 @@ Až si projdete jednotlivé funkce a vyzkoušíte si, co vše s robotem lze děl
 
 Vaším úkolem bude navrhnout program (algoritmus), díky kterému bude robot jezdit po čáře. Chceme jen základní program nebo popis algoritmu. Snažte se navrhnout řešení v podobě funkce, která bude mít na vstupu jako proměnné hodnoty ze senzorů `S1` až `S5` (pro zjednodušení lze vynechat prostřední senzor) a na výstupu bude `error`, který následně budete přičítat nebo odčítat k jednotlivým motorům. Pokuste se vyhnout složitým konstrukcím s hromadou podmínek, které by řešili jednotlivé stavy, ale využijte výhodu funkce, která může snadněji řešit všechny stavy.
 
-Vaše řešení odevzdejte do 30.\ května do informačního systému JCMM. Program odevzdávejte ve formě textového souboru, tak aby se dal jednoduše otestovat v simulátoru. Pokud budete odevzdávat slovní popis algoritmu, převeďte jej do PDF (vyhněte se odevzdávání Wordových dokumentů).
-Na závěr prosím do poznámky uveďte, zda by vám více vyhovoval úterní (14.\ 6.\ 2016) nebo čtvrteční (16.\ 6.\ 2016) termín T-exkurze. Výsledky budou k dispozici do 5\ dnů po 30.\ květnu.
+Vaše řešení odevzdejte do 6.\ listopadu do informačního systému JCMM. Program odevzdávejte ve formě textového souboru, tak aby se dal jednoduše otestovat v simulátoru. Pokud budete odevzdávat slovní popis algoritmu, převeďte jej do PDF (vyhněte se odevzdávání Wordových dokumentů).
+Na závěr prosím do poznámky uveďte, zda by vám více vyhovoval čtvrteční (24.\ 11.\ 2016) nebo páteční (25.\ 11.\ 2016) termín T-exkurze. Výsledky budou k dispozici do 5\ dnů po 6.\ listopadu.
 
 Pokud byste měli jakýkoliv problém nebo dotaz, nebojte se na nás obrátit. Rádi vám pomůžeme. Můžete nám napsat na <robotarna@robotikabrno.cz> nebo volejte na +420\ 603\ 366\ 463.
 
