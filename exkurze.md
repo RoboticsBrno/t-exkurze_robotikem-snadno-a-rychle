@@ -835,10 +835,10 @@ Pokud byste si chtěli robotické a programátorské znalosti dále rozšiřovat
 
 **Kurzy na Robotárně**  
 (Programování mikroprocesorů na Arduinu, programování pro PC, 3D modelování, elektronika, LEGO Mindstorms EV3, Základy programování pro Android, ...)  
-<http://robotikabrno.cz/robotarna/krouzky>
+[http://robotikabrno.cz/robotarna/krouzky](https://goo.gl/MWsLQi)
 
-**Robotický tábor 2017 - Naučme se s Arduinem**  
+**Robotický tábor 2017 - Soustředění robotiků aneb pojďme si hrát s Arduinem**  
 sobota 8. 7. – sobota 15. 7. 2017  
-<http://robotikabrno.cz/robotarna/tabory/roboticky-tabor-2017>
+[http://robotikabrno.cz/robotarna/tabory/](https://goo.gl/EmSn9g)
 
 ![Robotárna - humanoid](Robotarna_humanoid.png "Robotárna - humanoid"){ width=80% }
