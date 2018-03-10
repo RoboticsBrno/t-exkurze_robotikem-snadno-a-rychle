@@ -603,7 +603,7 @@ Výhodou toho je, že takto vytvořenou knihovnu můžeme poté použít ve víc
 
 Standardní knihovny (ty dodávané s překladačem) se připojují pomocí `#include </*jméno knihovny*/>`.
 
-Pro seznam standardních knihoven na PC doporučuji stránky http://cplusplus.com/reference/. Jsou sice anglicky, ale najdete zde kompletní standardní knihovny i s příklady použití (pozor, značná část zde popsaných věcí funguje na PC, ale už ne na mikroprocesorech).
+Pro seznam standardních knihoven na PC doporučuji stránky http://cppreference.com/. Jsou sice anglicky, ale najdete zde kompletní standardní knihovny i s příklady použití (pozor, značná část zde popsaných věcí funguje na PC, ale už ne na mikroprocesorech).
 
 Nejpoužívanější knihovny na mikroprocesorech Atmel:
 
